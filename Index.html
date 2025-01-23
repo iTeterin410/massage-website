@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эффект "Страница в странице"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Шапка сайта  -->
+    <div class="Header">
+
+        <div class="Header_Logo">
+        <a href="Index.html" ><img src="img\Index\Header\MC.png"></a>
+    </div>
+    
+    <div class="Header_Menu">
+        <p class="Header_Menu_p" ><a href="Prices.html" target="_self">Услуги</a></p> 
+        <p class="Header_Menu_p"><a href="Stocks.html" target="_self">Акции</a></p>
+        <p class="Header_Menu_p"><a href="About-us.html" target="_self">О нас</a></p>
+        <p class="Header_Menu_p"><a href="Reviews.html" target="_self">Отзывы</a></p>
+        <p class="Header_Menu_p"><a href="Contacts.html" target="_self">Контакты</a></p>
+    </div>
+    
+    <div class="Header_Contact">
+        <p class="Header_Contact_p" ><a href="https://vk.com/igormassagevologda" target="_blank"><img src="img\Index\Header\vk32-for-black.png" width="25px" height="25px" ></a></p>
+        <p class="Header_Contact_p" ><a href="https://web.telegram.org/a/" target="_blank"><img src="img\Index\Header\tg32-for-black.png" width="25px" height="25px" ></a></p>
+        <p class="Header_Contact_p" ><a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"><img src="img\Index\Header\whatsapp32-for-black.png" width="25px" height="25px"></a></p>
+        
+    </div>
+    </div>
+
+
+<!-- Оснвной Блок -->
+
+<div class="Index">
+    
+
+    <!-- Визитка сайта -->
+    <div class="Index_Vizitka">
+
+        <div class="Index_Vizitka_Main_Block">
+            <p style="font-size: 80px; padding-bottom: 4rem;">Massage club</p>
+            <p style="font-size: 35px;">+7 (921) 683 30 14</p>
+            <p style="font-size: 35px; padding-bottom: 3rem;">
+                <a href="https://vk.com/igormassagevologda" target="_blank"><img src="img\Index\Vizitka\vk32-for-white.png" width="25px" height="25px" ></a>
+                <a href="https://web.telegram.org/a/" target="_blank"><img src="img\Index\Vizitka\tg32-for-white.png" width="25px" height="25px" ></a>
+                <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"><img src="img\Index\Vizitka\whatsapp32-for-white.png" width="25px" height="25px"></a>
+            </p>
+            <!-- <h2 style="font-size: 35px;">Записаться</h2> -->
+            <button class="btn" onclick="window.location.href='Zapis.html'">Записаться</button>
+        </div>
+
+</div>
+ 
+<!-- Приветсвие сайта -->
+    <div class="Index_Greeting">
+
+        <div class="Index_Greeting_Left">
+            <p>Стремясь к благополучию каждого, мы видим свою миссию в том, чтобы массаж стал неотъемлемой и естественной частью здорового образа жизни, а не просто приятной процедурой Мы убеждены, что уже с первого сеанса вы почувствуете ощутимую пользу и высокое качество нашей работы, ведь в нашей команде трудятся исключительно опытные и сертифицированные специалисты своего дела.</p>
+        </div>
+    
+        <div class="Index_Greeting_Right">
+            <p><img src="img\Index\Greeting\Greeting.jpg" width="600px" height="400px" class="active" style="position: absolute;"></p> 
+            <p><img src="img\Index\Greeting\Greeting-2.png" width="600px" height="400px" style="position: absolute;" ></p> 
+            <p><img src="img\Index\Greeting\Greeting-3.png" width="600px" height="400px" style="position: absolute;" ></p> 
+            <p><img src="img\Index\Greeting\Greeting-4.png" width="600px" height="400px" style="position: absolute;"></p> 
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+  const slider = document.querySelector('.Index_Greeting_Right');
+  const images = slider.querySelectorAll('img');
+  let currentIndex = 0;
+
+  function showNextImage() {
+    images[currentIndex].classList.remove('active'); // Скрываем текущее изображение
+      currentIndex++; // Переходим к следующему индексу
+    if (currentIndex >= images.length) { // Если индекс выходит за пределы массива
+      currentIndex = 0; // Сбрасываем индекс к началу
+    }
+     images[currentIndex].classList.add('active'); // Показываем следующее изображение
+  }
+
+  setInterval(showNextImage, 5000); // Запускаем показ следующего изображения каждые 5 секунд
+});
+        </script>
+        
+    </div>
+
+<!-- Услуги сайта -->
+<div class="Index_Prices">
+
+    <div class="Index_Prices_Main_Top">
+         
+        <h1>Услуги и цены</h1> 
+    </div>
+ 
+<div class="Price_Mine">
+
+    <div class="Price_block">
+        <a href="Prices.html" target="_self"><img src="img\Index\Prices\Prices-1-2.png" style="width: 300px; height: 500px; "></a>
+        <p class="Price_block_text">Массаж тела</p>
+    </div>
+
+  <div class="Price_block">
+    <a href="Prices.html" target="_self"><img src="img\Index\Prices\Prices-2-2.png" style="width: 300px; height: 500px;"></a>
+    <p class="Price_block_text">Массаж лица</p>
+    </div>
+    
+    <div class="Price_block">
+        <a href="Prices.html" target="_self"><img src="img\Index\Prices\Prices-3-2.png" style="width: 300px; height: 500px;"></a>
+        <p class="Price_block_text">Антицеллюлитный массаж</p>
+        
+    </div>
+    
+    <div class="Index_Prices_Main_bottom"> 
+       <!--  <button class="btn" onclick="window.location.href='Prices.html'">Посмотреть все услуги</button> -->
+    </div>
+    
+    
+</div>
+
+
+
+<!-- Работники массажисты салона -->
+<div class="Index_Workers">
+
+    <div class="Index_Workers_Main_Top">
+         
+        <h1>Наша команда</h1> 
+        <p style="font-size: 15px;">Вами займутся сертифицированные профессионалы с большим опытом и медицинским образованием.</p>
+    </div>
+    
+
+ 
+<div class="Workers_Mine">
+
+    <div class="Workers_block">
+        <img src="img\Index\Workers\Workers.jpg" style="width: 300px; height: 300px; border-radius: 50%;">
+        <p>Виталий</p>
+    </div>
+
+  <div class="Workers_block">
+    <img src="img\Index\Workers\Workers.jpg" style="width: 300px; height: 300px; border-radius: 50%;">
+    <p>Мария</p>
+    </div>
+    
+    <div class="Workers_block">
+        <img src="img\Index\Workers\Workers.jpg" style="width: 300px; height: 300px; border-radius: 50%;">
+        <p>Игорь</p>
+        
+    </div>
+    
+    <div class="Index_Workers_Main_bottom">
+        <button class="btn" onclick="window.location.href='About-us.html'">Посмотреть всю команду</button> 
+        
+    </div>
+    
+</div>
+
+<!-- Акции -->
+<div class="Index_Stocks">
+    
+    
+    <div class="Index_Stocks_Top">
+        <h1 class="menu01" >Акции</h1> 
+         
+    </div>
+
+    <div class="Index_Stocks_Main">
+
+        <div class="Index_Stocks_Left">
+            <img src="img\Index\Stocks\Stocks.jpg" style="width: 550px; height: 400px;">    
+        </div>
+
+        <div class="Index_Stocks_Right">
+            <p>Не упустите возможность побаловать себя и близких по выгодным ценам! Наш салон регулярно проводит акции и предлагает специальные скидки на различные виды массажа и спа-процедуры. Следите за обновлениями на сайте и в наших социальных сетях, чтобы не пропустить самые горячие предложения. Подарите себе минуты релаксации и восстановления по приятной цене.</p> 
+        </div>
+    </div>
+
+   
+    
+
+    <div class="Index_Stocks_Bottom">
+        <!-- <p>Здесь Вы найдете всю информацию о наших актуальных акциях.</p> -->
+        <button class="btn" onclick="window.location.href='Stocks.html'">Здесь Вы найдете всю информацию о наших актуальных акциях</button>
+        
+    </div>
+
+</div>
+
+
+<!-- Отзывы -->
+
+<div class="Index_Reviews">
+
+    <div class="Index_Reviews_Main_Top">
+         
+        <h1>Про нас говорят</h1> 
+        <p style="font-size: 20px;">Наши клиенты гордятся тем, что наконец познакомились с  нами, а мы рады дарить им положительные эмоции.</p>
+    </div>
+    
+
+ 
+<div class="Reviews_Mine">
+
+    <div class="Reviews_block">
+        <img src="img\Index\Reviews\Reviews-1.jpg" style="width: 350px; height: 350px;">
+        
+    </div>
+
+  <div class="Reviews_block">
+    <img src="img\Index\Reviews\otziv-2.jpg" style="width: 350px; height: 350px;">
+    
+    </div>
+    
+    <div class="Reviews_block">
+        <img src="img\Index\Reviews\otziv-3.jpg" style="width: 400px; height: 350px;">
+        
+        
+    </div>
+    
+    <div class="Index_Reviews_Main_bottom">
+        <p class="menu01" >Мы в социальных сетях: @MassageClub.</p> 
+        
+    </div>
+    
+</div>
+
+
+
+
+    
+<!-- Контакты и карта салона -->
+    <div class="Index_Carta">
+
+        <div class="Index_Carta_Left">
+            <p><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/?feedback=object%2Fadd&feedback-context=map.context&ll=30.361694%2C59.932267&source=serp_navig&utm_medium=mapframe&utm_source=maps&z=15.84" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?feedback=object%2Fadd&feedback-context=map.context&ll=30.361694%2C59.932267&source=serp_navig&z=15.84" width="500" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div></p>    
+        </div>
+
+
+        
+    
+        <div class="Index_Carta_Right">
+            <p>+7 (921 683 30 14)</p> 
+            <p>Ежедневно с 10-00 до 22-00</p> 
+            <p>faul32@mail.ru</p> 
+            <h2>Адрес</h2>
+            <p>Санкт-Петербург, м. Площадь Восстания улица Невский проспект, дом 116, ТЦ Невский Центр (2 этаж)</p>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+<!-- Разделитель для футера -->
+<div class="HR">
+    <hr>
+</div>
+
+<!-- Футер сайта -->
+<div class="Footer">
+
+    <p></p>Услуги, предоставляемые нами не являются медицинским массажем и предназначены только для здоровых людей, желающих укрепить свое здоровье. 
+    Информация на сайте носит рекламно-ознакомительный характер и может отличаться от фактической. С полным перечнем оказываемых услуг можно ознакомиться в 
+    действующем прейскуранте по месту оказания услуг.</p>
+</div>
+
+
+</body>
+</html>

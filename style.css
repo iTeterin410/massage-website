@@ -1,0 +1,972 @@
+/* Во всем документене убираем рамки для блоков и текста */
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI Variable Display Light", "Segoe UI Light", "Segoe UI", sans-serif;
+    font-weight: 300;  /* Обычно "Light" соответствует более тонкому начертанию шрифта, поэтому обычно надо задать weight*/
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* Шапка сайта */
+.Header{
+    
+    width: 100%;
+    min-height: 9rem;
+    max-height: 9rem;
+
+    
+    
+    display: flex;
+    
+    /*justify-content: center;*/
+    align-items: center;
+
+    background-color:rgba(0, 0, 0, 0.8);
+    color: azure;
+
+}
+
+.Header_Logo{
+    font-size: 50px;
+    
+    text-align: right;
+    width: 10%;
+    
+    
+}
+
+/* .Header_Menu{
+    font-size: 20px;
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    
+} */
+
+.Header_Menu {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.Header_Menu_p a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.Header_Menu_p a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.Header_Menu_p a:hover::after,
+.Header_Menu_p a:focus::after {
+    width: 100%;
+    left: 0;
+}
+
+.Header_Menu_p{
+    padding-right: 2rem;
+}
+
+.Header_Contact{
+    font-size: 15px;
+    
+    text-align: left;
+    width: 10%;
+    
+    padding: 0px;
+}
+
+/* Главная страница сайта */
+.Index{
+
+    flex-grow: 1;
+    background-color: white;
+
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    
+    text-align: center;
+    
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+
+    
+    
+}
+
+/* Визитка сайта */
+.Index_Vizitka{
+    background-color: white;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color:black;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+
+.Index_Vizitka_Main_Block{
+    
+    font-size: 20px;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    color:black;
+    padding: 2rem;
+
+    width: 35%;
+    height: 25vw;
+
+    border: 10px, solid, black;
+}
+
+/* Услуги и цены сайта */
+
+.Index_Prices{
+    background-color:  width;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    color: black;
+
+    padding-top: 3rem;
+
+    
+}
+
+.Index_Prices_Main_Top{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+
+    
+    color: black;
+}
+
+
+.Price_Mine{
+text-align: center;
+width: 100%;
+height: auto;
+
+}
+
+.Price_block{
+    
+    width: 20rem;
+    height: 30rem;
+    padding: 30px;
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+    padding-top: 10px;
+    
+    
+    text-align: center;
+
+    font-size: 20px;
+
+    transition: transform 0.1s ease;  /* Плавный переход */
+    
+}
+
+.Price_block_text{
+    padding-top: 2rem;
+    font-size: 25px;
+    padding-bottom: 2rem;
+}
+
+.Price_block:hover img {
+  transform: scale(1.1); /* Увеличиваем размер на 1.1 */
+}
+
+.Price_text{
+    width: 12rem;
+    height: auto;
+    text-align: center;
+    
+    
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+}
+
+.Index_Prices_Main_bottom{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    
+    
+    color: black;
+}
+
+/* Работники массажисты сайта */
+
+.Index_Workers{
+    background-color: rgba(0, 0, 0, 0.8);
+    background-color:  width;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    color:white;
+
+    padding-top: 3rem;
+
+    font-size: 20px;
+
+    
+}
+
+.Index_Workers_Main_Top{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+
+    
+    color:white;
+}
+
+
+.Workers_Mine{
+text-align: center;
+width: 100%;
+height: auto;
+}
+
+.Workers_block{
+    
+    width: 20rem;
+    height: auto;
+    padding: 0px;
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+    padding-top: 10px;
+    
+    
+    text-align: center;
+}
+
+.Workers_text{
+    width: 12rem;
+    height: auto;
+    text-align: center;
+    
+    
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.Index_Workers_Main_bottom{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    
+    
+    color:white;
+}   
+
+
+
+
+
+
+
+/* Приветсвие сайта */
+.Index_Greeting{
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 2rem;
+    
+}
+
+.Index_Greeting_Left{
+    font-size: 20px;
+    text-align: left;
+    width: 35%;
+    height: auto;
+    color: white;
+    padding: 2rem;
+    
+}
+
+.Index_Greeting_Right{
+    font-size: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 35%;
+    height: 400px;
+    color: white;
+    
+    
+
+    position: relative;
+    overflow: hidden; /* Скрывает изображения, которые выходят за пределы слайдера */
+    
+}
+.Index_Greeting_Right img {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Корректное масштабирование изображения */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Плавный переход */
+    padding: 2rem;
+    
+
+    position: relative;
+   /*  width: 600px;
+    height: 400px; */
+  }
+  
+  .Index_Greeting_Right img.active {
+    opacity: 1;
+  }
+
+
+
+
+/* Акции */
+/* .Index_Stocks{
+    background-color:  white;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    color: black;
+
+    padding-top: 3rem;
+
+    
+}
+
+.Stocks_Mine{
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.Stocks_block_Left{
+    font-size: 20px;
+    text-align: left;
+    width: 35%;
+    height: auto;
+    color: white;
+    padding: 2rem;
+    
+}
+
+.Stocks_block_Right{
+    font-size: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 35%;
+    height: auto;
+    color: white;
+    padding: 2rem;
+    
+}
+
+.Index_Stocks_Main_bottom{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    
+    
+    color: black;
+
+
+}
+ */
+
+/* Акции */
+
+.Index_Stocks{
+    background-color:  white;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    color: black;
+
+    
+    
+    
+    
+}
+
+.Index_Stocks_Main{
+    
+    
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+    padding-bottom: 1rem;
+    
+    color: black;
+   
+}
+
+.Index_Stocks_Left{
+    font-size: 10px;
+    text-align: center;
+    width: 35%;
+    height: auto;
+    
+    padding: 2rem;
+    color: black;
+    
+}
+
+.Index_Stocks_Right{
+    font-size: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 35%;
+    height: auto;
+    color: black;
+    padding: 2rem;
+    
+}
+
+.Index_Stocks_Top{
+
+    width: 100%;
+    height: auto;
+    
+    font-size: 20px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+    color: black;
+}
+
+.Index_Stocks_Bottom{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    
+    
+    color:black;
+    
+}
+
+/* Отзывы */
+
+.Index_Reviews{
+    
+    
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    color:white;
+
+    padding-top: 3rem;
+
+    
+}
+
+.Index_Reviews_Main_Top{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+
+    
+    color:white;
+}
+
+
+.Reviews_Mine{
+text-align: center;
+width: 100%;
+height: auto;
+}
+
+.Reviews_block{
+    
+    width: 20rem;
+    height: auto;
+    padding: 0px;
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+    /* padding-top: 10px; */
+    padding: 20px;
+    font-size: 20px;
+    
+    
+    text-align: center;
+}
+
+.Reviews_text{
+    width: 12rem;
+    height: auto;
+    text-align: center;
+    
+    
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    
+    
+    display: inline-block;
+    white-space: normal;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.Index_Reviews_Main_bottom{
+    
+    width: 100%;
+    height: auto;
+    
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
+    
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    
+    
+    color:white;
+}   
+
+
+
+
+/* Карта и контакты сайта */
+.Index_Carta{
+    background-color: white;
+    width: 100%;
+    min-height: 10rem;
+    max-height: auto;
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+}
+
+.Index_Carta_Left{
+    font-size: 10px;
+    
+    text-align: center;
+    width: 35%;
+    height: auto;
+    color: black;
+    padding: 2rem;
+    
+}
+
+.Index_Carta_Right{
+    font-size: 20px;
+    
+    
+    
+    text-align: left;
+    
+    width: 35%;
+    height: auto;
+    color: black;
+    padding: 2rem;
+    
+}
+
+
+
+/* Фотер сайта */
+
+
+.HR{
+    display: grid;
+  align-content: end; /* Прижимаем к нижней части */
+}
+
+.Footer{
+    background-color:white;
+    width: 100%;
+    min-height: auto;
+    max-height: auto;
+
+    color: black;
+
+    font-size: 15px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+   
+    
+
+    display: grid;
+  align-content: end; /* Прижимаем к нижней части */
+    
+
+}
+
+
+/* Новый css */
+/* Заголовок */
+.block-0 {
+    width: 100%;
+    height: auto;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.header-0 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    /* color: black; */
+}
+
+/* Блок 1  */
+
+.block-1 {
+    width: 100%;
+    height: auto;
+    /* background-color: white; */
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+
+.content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 80%;
+}
+
+.content-1 img {
+    width: 40%;
+    max-width: 500px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.text-1 {
+    width: 50%;
+    font-size: 18px;
+}
+
+.footer-1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+
+/* Блок 2 картинка справа */
+
+.black{
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.white{
+    background-color:white;
+    color: black;
+}
+
+
+
+.block-2 {
+    width: 100%;
+    height: auto;
+    /* background-color: black; */
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 2rem;
+}
+
+.content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 80%;
+}
+
+.content-2 img {
+    width: 40%;
+    max-width: 500px;
+    margin-left: 50px; /* Изменил отступ с правого на левый */
+    border-radius: 10px;
+}
+
+.text-container-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.text-2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.prices-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.prices-2 div {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.footer-2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Кнопка */
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/* ---------------------------------- */
+
+@media (max-width: 768px) {
+    .Header {
+        /* flex-direction: column;
+        min-height: auto;
+        max-height: 300px;
+        padding: 0.5rem; */
+        display: flex;
+flex-direction: row;
+min-height: auto;
+max-height: 300px;
+padding: 0.5rem;
+    }
+
+    .Header_Logo {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Header_Menu {
+        flex-direction: column;
+        font-size: 16px;
+        gap: 5px;
+        width: 100%;
+    }
+
+    .Header_Contact {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Media Query для мобильных устройств */
+@media (max-width: 767px) { /*  Или другое значение ширины, соответствующее вашим потребностям */
+    .Index_Vizitka {
+        display: none; /* Скрываем блок на мобильных устройствах */
+    }
+}
+
+/* Media Query для мобильных устройств */
+@media (max-width: 767px) { /*  Или другое значение ширины */
+    .Index_Stocks {
+        display: none; /* Выравниваем по центру */
+    }
+    
+}
