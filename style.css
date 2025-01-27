@@ -923,7 +923,7 @@ height: auto;
 
 /* ---------------------------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
     .Header {
         /* flex-direction: column;
         min-height: auto;
@@ -957,16 +957,49 @@ padding: 0.5rem;
 }
 
 /* Media Query для мобильных устройств */
-@media (max-width: 767px) { /*  Или другое значение ширины, соответствующее вашим потребностям */
+@media (max-width: 1023px) { /*  Или другое значение ширины, соответствующее вашим потребностям */
     .Index_Vizitka {
         display: none; /* Скрываем блок на мобильных устройствах */
     }
 }
 
 /* Media Query для мобильных устройств */
-@media (max-width: 767px) { /*  Или другое значение ширины */
+@media (max-width: 1023px) { /*  Или другое значение ширины */
     .Index_Stocks {
         display: none; /* Выравниваем по центру */
     }
     
 }
+
+@media (max-width: 1023px) {
+    .content-1,
+    .content-2,
+    .Index_Carta,
+    .Index_Greeting {
+        display: grid;
+
+        display: flex;
+    flex-direction: column; /* Вертикальное расположение */
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center;    /* Выравнивание по вертикали */
+    
+
+    
+    }
+    .text-1,
+    .header-1,
+    .Index_Carta_Right,
+    .Index_Carta_Left,
+    .Index_Greeting_Right,
+    .Index_Greeting_Left{
+        width: 90%;
+    }
+    .content-1,
+    .content-2{
+        width: 100%;
+    }
+    
+
+    
+}
+
