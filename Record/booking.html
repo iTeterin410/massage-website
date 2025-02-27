@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на массаж</title>
+    <link rel="stylesheet" href="styleq.css">
+</head>
+<body>
+    <h1>Запись на массаж</h1>
+    <form id="booking-form">
+        <label for="first_name">Имя:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+
+         <label for="last_name">Фамилия:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+
+        <label for="phone_number">Телефон:</label>
+        <input type="text" id="phone_number" name="phone_number" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="employee_id">Массажист:</label>
+        <select id="employee_id" name="employee_id" required>
+            <!-- Массажисты будут загружаться динамически из БД -->
+        </select><br>
+
+        <label for="service_id">Услуга:</label>
+        <select id="service_id" name="service_id" required>
+            <!-- Услуги будут загружаться динамически из БД -->
+        </select><br>
+
+        <label for="appointment_date">Дата:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required><br>
+
+        <label for="schedule_id">Время:</label>
+        <select id="schedule_id" name="schedule_id" required>
+             <!-- Доступное время будет загружаться динамически из БД -->
+         </select><br>
+
+       <label for="notes">Примечания:</label>
+        <textarea id="notes" name="notes"></textarea><br>
+
+        <button type="submit">Записаться</button>
+    </form>
+    <div id="booking-result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
